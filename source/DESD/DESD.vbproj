@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEEDCD9C-4476-4726-B13F-3814806BF84D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DESD</RootNamespace>
+    <AssemblyName>DESD</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DESD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DESD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Math\Complex.vb" />
+    <Compile Include="Math\ComplexMatrix.vb" />
+    <Compile Include="Math\ComplexVector.vb" />
+    <Compile Include="Math\Constants.vb" />
+    <Compile Include="Math\CubicSpline.vb" />
+    <Compile Include="Math\FactorialLn%28n%29.vb" />
+    <Compile Include="Math\CSphericalBessel.vb" />
+    <Compile Include="Math\DoubleFactorial.vb" />
+    <Compile Include="Math\FractionalBessel.vb" />
+    <Compile Include="Math\Rotm.vb" />
+    <Compile Include="Math\SphericalBessel.vb" />
+    <Compile Include="Math\GammaLn%28x%29.vb" />
+    <Compile Include="Math\SphHarmonic%28t,p%29.vb" />
+    <Compile Include="Math\LRotm.vb" />
+    <Compile Include="Math\Legendre%28l,m,x%29.vb" />
+    <Compile Include="Math\Matrix.vb" />
+    <Compile Include="Math\PolynomialInterpolation.vb" />
+    <Compile Include="Math\SimpsonsRule.vb" />
+    <Compile Include="Math\TrapezoidalRuleIntegrator.vb" />
+    <Compile Include="Math\Vector.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Physics\AdaptiveUnboundMesh.vb" />
+    <Compile Include="Physics\AngularMomentumEnum.vb" />
+    <Compile Include="Physics\Atom.vb" />
+    <Compile Include="Physics\AtomBase.vb" />
+    <Compile Include="Physics\AtomicPotential.vb" />
+    <Compile Include="Physics\BoundRSESolver.vb" />
+    <Compile Include="Physics\Cluster.vb" />
+    <Compile Include="Physics\ClusterAtom.vb" />
+    <Compile Include="Physics\ClusterSpecies.vb" />
+    <Compile Include="Physics\CubicMesh.vb" />
+    <Compile Include="Physics\DesclauxAtom.vb" />
+    <Compile Include="Physics\DESDCalculation.vb" />
+    <Compile Include="Physics\ElectronicConfiguration.vb" />
+    <Compile Include="Physics\Element.vb" />
+    <Compile Include="Physics\FEFFCalculation.vb" />
+    <Compile Include="Physics\FEFFPhaseShiftFile.vb" />
+    <Compile Include="Physics\HermanSkillmanAtom.vb" />
+    <Compile Include="Physics\HermanSkillmanMesh.vb" />
+    <Compile Include="Physics\HermanSkillmanMeshSize.vb" />
+    <Compile Include="Physics\HermanSkillmanPotential.vb" />
+    <Compile Include="Physics\HermanSkillmanTable.vb" />
+    <Compile Include="Physics\HSTableConverter.vb" />
+    <Compile Include="Physics\IAtom.vb" />
+    <Compile Include="Physics\IMSPathProcessor.vb" />
+    <Compile Include="Physics\IMuffinTin.vb" />
+    <Compile Include="Physics\IPhaseShiftProvider.vb" />
+    <Compile Include="Physics\IPhaseShiftProvider2.vb" />
+    <Compile Include="Physics\IPhaseShiftsFactory.vb" />
+    <Compile Include="Physics\IRadialMesh.vb" />
+    <Compile Include="Physics\MattheissMuffinTin.vb" />
+    <Compile Include="Physics\MeshType.vb" />
+    <Compile Include="Physics\MSPath.vb" />
+    <Compile Include="Physics\MSPathCalculator.vb" />
+    <Compile Include="Physics\MSPathProcessor.vb" />
+    <Compile Include="Physics\MSPathProcessor2.vb" />
+    <Compile Include="Physics\MSPathTerminator.vb" />
+    <Compile Include="Physics\NeutralMuffinTin.vb" />
+    <Compile Include="Physics\NeutralSCMuffinTin.vb" />
+    <Compile Include="Physics\NumerovRadialIntegrator.vb" />
+    <Compile Include="Physics\Orbital.vb" />
+    <Compile Include="Physics\PendryPhaseShifts.vb" />
+    <Compile Include="Physics\PhaseShift.vb" />
+    <Compile Include="Physics\PhaseShiftLookup.vb" />
+    <Compile Include="Physics\Physics.Constants.vb" />
+    <Compile Include="Physics\QuantityOfEnergy.vb" />
+    <Compile Include="Physics\RadialMeshEnumerator.vb" />
+    <Compile Include="Physics\RandomMesh.vb" />
+    <Compile Include="Physics\ScatteringAmplitudeCalculator.vb" />
+    <Compile Include="Physics\ScatteringPath.vb" />
+    <Compile Include="Physics\SimpleMesh.vb" />
+    <Compile Include="Physics\UnboundRSESolver.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.C%28n,l,z%29.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.Fmatrix.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.Gamma.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.LGamma.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.LGammaTwid.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.Nlm.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.Qmatrix.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

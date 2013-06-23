@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AE42713-D3E2-42E1-9248-449CBD65EFAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DESDMSTest</RootNamespace>
+    <AssemblyName>DESDMSTest</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DESDMSTest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DESDMSTest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Math\ComplexMatrix_Test.vb" />
+    <Compile Include="Math\Complex_Test.vb" />
+    <Compile Include="Math\CubicSpline_Test.vb" />
+    <Compile Include="Math\FactorialLn%28n%29_Test.vb" />
+    <Compile Include="Math\CSphericalBessel_Test.vb" />
+    <Compile Include="Math\FractionalBessel_Test.vb" />
+    <Compile Include="Math\SphericalHarmonic_Test.vb" />
+    <Compile Include="Math\SphericalBessel_Test.vb" />
+    <Compile Include="Math\PolynomialInterpolation_Test.vb" />
+    <Compile Include="Math\RotationMatrices_Test.vb" />
+    <Compile Include="Math\Legendre%28l,m,x%29_Test.vb" />
+    <Compile Include="Math\GammaLn%28x%29_Test.vb" />
+    <Compile Include="Math\Matrix_Test.vb" />
+    <Compile Include="Math\SimpsonsRule_Test.vb" />
+    <Compile Include="Math\TrapezoidalRuleIntegrator_Test.vb" />
+    <Compile Include="Math\Vector_Test.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Physics\AdaptiveUnboundMesh.UnitTest.vb" />
+    <Compile Include="Physics\Atom.UnitTest.vb" />
+    <Compile Include="Physics\BoundRSESolver.UnitTest.vb" />
+    <Compile Include="Physics\Cluster.UnitTest.vb" />
+    <Compile Include="Physics\CubicMesh.UnitTest.vb" />
+    <Compile Include="Physics\DESDCalculation.UnitTest.vb" />
+    <Compile Include="Physics\ElectronicConfiguration.UnitTest.vb" />
+    <Compile Include="Physics\ElementEnumeration.UnitTest.vb" />
+    <Compile Include="Physics\FEFFCalculation.UnitTest.vb" />
+    <Compile Include="Physics\FEFFPhaseShiftFile.UnitTest.vb" />
+    <Compile Include="Physics\HermanSkillmanMesh.UnitTest.vb" />
+    <Compile Include="Physics\HermanSkillmanPotential.UnitTest.vb" />
+    <Compile Include="Physics\HSTableConverter.UnitTest.vb" />
+    <Compile Include="Physics\MattheissMuffinTin.UnitTest.vb" />
+    <Compile Include="Physics\MSPath.UnitTest.vb" />
+    <Compile Include="Physics\MSPathProcessor.UnitTest.vb" />
+    <Compile Include="Physics\NeutralMuffinTin.UnitTest.vb" />
+    <Compile Include="Physics\NeutralSCMuffinTin.UnitTest.vb" />
+    <Compile Include="Physics\NumerovRadialIntegrator.UnitTest.vb" />
+    <Compile Include="Physics\Orbital.UnitTest.vb" />
+    <Compile Include="Physics\PathEnumerationTest.vb" />
+    <Compile Include="Physics\PhaseShift.UnitTest.vb" />
+    <Compile Include="Physics\SimpleMesh.UnitTest.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.C%28n,l,z%29.UnitTest.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.Fmatrix.UnitTest.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.Gamma.UnitTest.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.LGamma.UnitTest.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.LGammaTwid.UnitTest.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.LRotm.UnitTest.vb" />
+    <Compile Include="RehrAlbers\RehrAlbers.Nlm.UnitTest.vb" />
+    <Compile Include="TestUtilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DESD\DESD.vbproj">
+      <Project>{beedcd9c-4476-4726-b13f-3814806bf84d}</Project>
+      <Name>DESD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

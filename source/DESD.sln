@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DESD", "DESD\DESD.vbproj", "{BEEDCD9C-4476-4726-B13F-3814806BF84D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DESDMSTest", "DESDMSTest\DESDMSTest.vbproj", "{0AE42713-D3E2-42E1-9248-449CBD65EFAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEEDCD9C-4476-4726-B13F-3814806BF84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEDCD9C-4476-4726-B13F-3814806BF84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEDCD9C-4476-4726-B13F-3814806BF84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEDCD9C-4476-4726-B13F-3814806BF84D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE42713-D3E2-42E1-9248-449CBD65EFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE42713-D3E2-42E1-9248-449CBD65EFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE42713-D3E2-42E1-9248-449CBD65EFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE42713-D3E2-42E1-9248-449CBD65EFAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
